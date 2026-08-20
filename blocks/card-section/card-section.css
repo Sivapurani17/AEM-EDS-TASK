@@ -1,0 +1,41 @@
+.card-section-container .card-section-wrapper .card-section {
+  display: flex;
+  gap: 10px;
+}
+.card-section-container .card-section-wrapper .card-section .card-sectiondiv {
+  text-align: center;
+  border-radius: 5px;
+  padding: 20px 0px;
+  position: relative;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+}
+.card-section-container .card-section-wrapper .card-section .card-sectiondiv__title {
+  font-size: 18px;
+  color: red;
+}
+.card-section-container .card-section-wrapper .card-section .card-sectiondiv__description {
+  font-size: 14px;
+  line-height: 1.5;
+}
+.card-section-container .card-section-wrapper .card-section .card-sectiondiv:after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background-color: red;
+  transform: scaleX(0);
+  transform-origin: bottom right;
+  transition: transform 0.6s ease-out;
+}
+.card-section-container .card-section-wrapper .card-section .card-sectiondiv:hover {
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease-in-out;
+}
+.card-section-container .card-section-wrapper .card-section .card-sectiondiv:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+  transition: transform 0.6s ease-out;
+}/*# sourceMappingURL=card-section.css.map */
