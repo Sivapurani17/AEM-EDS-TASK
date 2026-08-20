@@ -1,0 +1,89 @@
+.teaser-container 
+{
+    .teaser-wrapper
+    {
+        .teaser
+        {
+            >div{
+                display:flex;
+                >div
+                {
+                    width:50%;
+                    margin-left:30px;
+                }
+                ul
+                {
+                    list-style:none;
+                    margin:20px 0px;
+                    li
+                    {
+                        position: relative;
+                        margin-top:10px;
+                        color:gray;
+                        &:before
+                        {
+                            content:"✔";
+                            position:absolute;
+                            font-size:10px;
+                            bottom:5px;
+                            margin-bottom:0px;
+                            left:-30px;
+                            width:14px;
+                            height:14px;
+                            padding:2px;
+                            text-align:center;
+                            color:white;
+                            border-radius:50%;
+                            background-color:#58bf6f;
+                        }
+                    }
+                }
+                p
+                {
+                    margin-top:50px;
+                    font-weight:bold;
+                    position:relative;
+                    a:first-child
+                    {
+                        margin-right:50px;
+                        padding: 15px 32px;
+                        border-radius: 4px;
+                        color: white;
+                        background: linear-gradient(to right, #005dba 50%, #6d29b6 98.21%);                }
+                    }
+                    a:last-child
+                    {
+                        &:after
+                        {
+                            content:"➔";
+                            position:absolute;
+                            margin-left:15px;
+                        }
+                        
+                    }
+                }
+        }
+        .top
+        {
+            >div
+            {
+                flex-direction: column !important;
+            }
+        }
+        .right
+        {
+            >div
+            {
+                flex-direction: row-reverse;
+            }
+        }
+        .bottom
+        {
+            >div
+            {
+                flex-direction: column-reverse !important;
+            }
+        }
+        
+    }
+}
