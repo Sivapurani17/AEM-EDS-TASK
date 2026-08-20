@@ -5,8 +5,8 @@ export default function decorate(block) {
     const cardimg = card.querySelector('p:has(img)');
     cardimg?.classList.add('card-sectiondiv__image');
     const cardtitle = card.querySelector('h2');
-    cardtitle?.classList.add('card-sectiondiv__title');
+    cardtitle?.classList.add('card-sectiondiv-title');
     const carddescription = card.querySelector('p:not(:has(img))');
-    carddescription?.classList.add('card-sectiondiv__description');
+    carddescription?.classList.add('card-sectiondiv-description');
   });
 }
